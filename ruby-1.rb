@@ -1,3 +1,4 @@
+## PRINTING AND VARIABLES
 # print "Enter a value"
 # first_num = gets.to_i
 
@@ -11,12 +12,14 @@
 # puts 1.456.class
 # puts 'String'.class
 
+## CONSTANTS
 # NEAT = "babs"
 
 # NEAT = 'Dre'
 
 # puts NEAT
 
+## FILE 1/O
 # write_handler = File.new("Your sum.out", "w")
 
 # write_handler.puts("Random Text").to_s
@@ -400,28 +403,110 @@ needs = "I need "
 # p menu_options.reverse_each {|item| puts item}
 
 
-file = File.new("authors.txt", "w")
+# file = File.new("authors.txt", "w")
 
-file.puts("William S.")
-file.puts("Agatha C.")
-file.puts("Wole S.")
+# file.puts("William S.")
+# file.puts("Agatha C.")
+# file.puts("Wole S.")
 
-file.close
+# file.close
 
-puts File.read("authors.txt")
+# puts File.read("authors.txt")
 
-file = File.new("authors.txt", "a")
-file.puts("Steven K.")
+# file = File.new("authors.txt", "a")
+# file.puts("Steven K.")
 
-file.close
+# file.close
 
-puts File.read("authors.txt")
+# puts File.read("authors.txt")
 
-file = File.new("authors_info.txt", "w")
-
-
+# file = File.new("authors_info.txt", "w")
 
 
+# def tryArgs(var)
+#   puts var
+# end
+
+# puts :api, player: :player_one, players: 'played'
+
+# require 'net/http'
+
+# Net::HTTP.start( 'www.ruby-lang.org', 80 ) do |http|
+# print( http.get( '/' ).body )
+# end
+
+# full_plastic_cup = 'cup full'
+# empty_plastic_cup = 0
+
+# if full_plastic_cup
+#   puts 'Plastic cup full'
+# end
+
+# unless empty_plastic_cup
+#   puts 'Plastic cup empty'
+# end
+
+# at_hotel = true
+# email = if at_hotel
+#   "why@hotelambrose.com"
+# else
+#   "why@drnhowardcham.com"
+# end
+
+# puts email
+
+# print "Type and be diabolical: "
+# idea_backwards = gets.reverse
+
+code_words = {
+  'starmonkeys' => 'paratroopers',
+  'catapult' => 'Chucky go go',
+  'Nigeria' => 'Rubbishland',
+  'Put on some Kabosh' => 'Get me some chunky cheese'
+}
+
+# # Get evil idea and swap in code words
+# print "Enter your evil idea here"
+# idea = gets
+# code_words.each do |real, code|
+#   idea.gsub!(real, code)
+# end
+
+# # Save the file
+# print "Enter a name for your file: "
+# idea_name = gets.strip
+# File::open( "idea-" + idea_name + ".txt", "w" ) do |f|
+#   f << idea
+# end
 
 
+# Print each idea out with the words fixed
+# Dir['idea-*.txt'].each do |file_name|
+# idea = File.read( file_name )
+# code_words.each do |real, code|
+# idea.gsub!( code, real )
+# end
+# puts idea
+# end
 
+# p File::methods
+
+# kitty_toys =
+# [:shape => 'sock', :fabric => 'cashmere'] +
+# [:shape => 'mouse', :fabric => 'calico'] +
+# [:shape => 'eggroll', :fabric => 'chenille']
+# kitty_toys.sort_by { |toy| toy[:fabric] }
+
+# kitty_toys.sort_by { |toy| toy[:fabric] }.each do |toy|
+#   puts "Blixy has a #{ toy[:shape] } made of #{ toy[:fabric] }"
+# end
+# class Elevator
+#   def close_up
+#     puts "we close up"
+#   end
+# end
+
+
+# p Elevator::public_instance_methods
+
+p [1,2,3].uniq!
